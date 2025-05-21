@@ -1,0 +1,159 @@
+.menu-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 50px;
+    height: 40px;
+    color: black
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    width: 250px;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(250px);
+  }
+
+ .sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column; /* Cambia a disposición en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center;
+}
+
+/* Estilo para la imagen de usuario */
+.sidebar-header .user-img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px; 
+  object-fit: cover; 
+}
+
+.sidebar-header .saludo {
+  margin: 0;
+  cursor: pointer;
+  color: #333; 
+  text-align: center;
+}
+
+
+  .close-button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .sidebar-nav {
+    padding: 20px 0;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 15px 20px;
+    background-color: white;
+    border: none;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .nav-item:hover {
+    background-color:rgba(228, 228, 228, 0.563);
+  }
+  .nav-item.active {
+    border: 3px solid blue;
+    color: blue;
+  }
+
+  .sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+  .logout-btn{
+    margin-left: 0px;
+    width: 200px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .logout-btn:hover{
+    background-color: rgb(236, 0, 0);
+  }
+
+.saludo{
+  cursor: pointer;
+}
+
+.user-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+  
+
+  @media (min-width: 768px) {
+    .menu-button {
+      display: none;
+    }
+
+    .sidebar {
+      left: 0;
+      transform: none;
+    }
+
+    .close-button {
+      display: none;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }

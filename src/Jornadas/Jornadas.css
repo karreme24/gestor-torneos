@@ -1,0 +1,180 @@
+
+.jornadas{
+    margin-left: 0px;
+}
+
+
+.confirm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+    
+    
+  }
+  
+  /* Contenedor del contenido */
+  .confirm-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    min-width: 300px;
+    max-width: 90%;
+    text-align: center;
+    
+    
+  }
+.confirm-options{
+  margin: 10px;
+}
+.confirm-content button{
+  margin: 5px;
+  width: 70px;
+  font-size: 16px;
+}
+  
+
+
+.jornadas-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.jornada-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.jornada-titulo {
+  color: #333;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 15px;
+}
+
+.partidos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.partido-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.equipo {
+  flex: 1;
+  padding: 8px;
+}
+
+.local {
+  
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+  
+
+  text-align: right;
+}
+
+.visita {
+  display: flex;
+  gap: 10px; 
+  text-align: left;
+}
+
+.vs {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #666;
+}
+
+.goles{
+  width: 50px;
+font-size: 16px;
+border: none;
+}
+
+
+.start-btn{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: rgb(0, 229, 255);
+  border: none;
+  cursor: pointer;
+  
+  font-family: sans-serif;
+        font-size: 16px;
+
+  
+}
+.start-btn:hover {
+  background-color: rgb(5, 216, 240);
+}
+
+.aviso-container {
+  background-color: white;
+  height: 170px;
+  width: 400px;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Asegúrate de que tanto el párrafo como el botón tengan display block */
+.aviso-container p {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+.aviso-container .start-btn {
+  display: block;
+  margin-top: 100px; 
+
+}
+@media (min-width: 768px) {
+    .jornadas{
+        margin-left: 250px;
+    }
+
+    
+
+    .aviso-container{
+      font-family: sans-serif;
+      font-size: 20px;
+      position: absolute;
+      left: 600px;
+      top: 200px;
+    }
+
+
+
+   
+  }

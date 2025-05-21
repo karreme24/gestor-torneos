@@ -1,0 +1,171 @@
+/* Estilos para el contenedor principal */
+.como-funciona-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+  
+/* Estilos para el subtítulo */
+.como-funciona-subtitle {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+  
+/* Estilos para la barra de navegación de secciones */
+.seccion-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    position: sticky;
+    top: 60px; /* Ajusta este valor según la altura de tu header */
+    z-index: 100;
+    padding: 5px 0;
+    width: 100%;
+    max-width: 1200px; /* Mantiene el ancho consistente con el contenedor principal */
+}
+  
+.seccion-item {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+  
+.seccion-item:hover {
+    color: #2E8B57; /* Verde, puedes ajustar al color de tu botón login */
+}
+  
+.seccion-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #2E8B57;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+  
+.seccion-item:hover::after {
+    width: 80%;
+}
+  
+/* Estilos para cada sección de contenido */
+.seccion {
+    margin-bottom: 80px;
+    scroll-margin-top: 120px; /* Ajustado para considerar la altura de la navbar fija */
+}
+  
+.seccion-title {
+    font-size: 2rem;
+    color: #2E8B57;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+  
+.seccion-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+  
+.seccion-text {
+    flex: 1;
+}
+  
+.seccion-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+}
+  
+.seccion-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.demo-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+.demo-image:hover {
+    transform: scale(1.02);
+}
+  
+/* Media queries para responsividad */
+@media screen and (max-width: 992px) {
+    .seccion-navbar {
+        overflow-x: auto;
+        justify-content: flex-start;
+        top: 50px; /* Ajusta para pantallas medianas si el header cambia de tamaño */
+    }
+    
+    .seccion-content {
+        flex-direction: column;
+    }
+    
+    .seccion-image {
+        margin-top: 20px;
+    }
+    
+    .como-funciona-subtitle {
+        font-size: 2.2rem;
+    }
+    
+    .seccion-title {
+        font-size: 1.8rem;
+    }
+    
+    .seccion {
+        scroll-margin-top: 100px; /* Ajustado para pantallas medianas */
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .seccion-navbar {
+        top: 40px; /* Ajusta para pantallas pequeñas si el header es más pequeño */
+    }
+    
+    .seccion-item {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .como-funciona-subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .seccion {
+        margin-bottom: 60px;
+        scroll-margin-top: 90px; /* Ajustado para pantallas pequeñas */
+    }
+    
+    .seccion-title {
+        font-size: 1.5rem;
+    }
+    
+    .seccion-text p {
+        font-size: 1rem;
+    }
+}

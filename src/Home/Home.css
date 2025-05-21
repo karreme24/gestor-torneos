@@ -1,0 +1,105 @@
+
+.home{
+    margin-left: 0px;
+}
+/* Contenedor principal */
+.standings-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Card de la tabla */
+.standings-card {
+    width: 100%;
+    max-width: 42rem; /* equivalente a max-w-2xl */
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Encabezado de la card */
+.standings-header {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.standings-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Contenedor de la tabla */
+.standings-content {
+    padding: 1rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+/* Estilos de la tabla */
+.standings-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Estilos del encabezado de la tabla */
+.standings-table thead tr {
+    background-color: #f3f4f6;
+}
+
+.standings-table th {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.standings-table th.text-center {
+    text-align: center;
+}
+
+/* Estilos de las filas */
+.standings-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+}
+
+.standings-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Estilos de las celdas */
+.standings-table td {
+    padding: 0.75rem;
+}
+
+.standings-table td.text-center {
+    text-align: center;
+}
+
+.standings-table td.font-medium {
+    font-weight: 500;
+}
+
+/* Estilos para la diferencia de goles */
+.positive-diff {
+    color: #059669; /* verde */
+}
+
+.negative-diff {
+    color: #dc2626; /* rojo */
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .home{
+        margin-left: 250px;
+    }
+  }

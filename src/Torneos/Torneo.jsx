@@ -5,7 +5,7 @@ import { useAuth } from '../context/aunthContext';
 import { db } from '../firebase/config';
 import { useIDSelectTorneo } from '../context/TorneosContex';
 import { where } from 'firebase/firestore/lite';
-import ConfirmarPopOut from '../../Popouts/confirmarPopOut';
+import ConfirmarPopOut from '../Popouts/ConfirmarPopOut';
 
 
 export default function Torneo({id, name, refresh, navigateTo}) {

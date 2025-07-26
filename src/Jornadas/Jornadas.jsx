@@ -3,7 +3,7 @@ import './Jornadas.css';
 import { collection, doc, getDoc, getDocs, query, updateDoc, where, writeBatch } from 'firebase/firestore'; 
 import { db } from '../firebase/config';
 import { useIDSelectTorneo } from '../context/TorneosContex';
-import ConfirmarPopOut from '../../Popouts/confirmarPopOut';
+import ConfirmarPopOut from '../Popouts/ConfirmarPopOut';
 
 import ErrorPopOut from '../error/ErrorPopOut';
 import Jornada from './jornada';

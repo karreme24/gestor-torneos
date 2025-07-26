@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Trash2 } from 'lucide-react';
 import { deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import ConfirmarPopOut from '../../Popouts/confirmarPopOut';
+import ConfirmarPopOut from '../Popouts/ConfirmarPopOut';
 
 export default function Equipo({ equipo, refresh }) {
   const [isConfirmOpen, setIsConfirmOpen] = useState(false);
